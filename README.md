@@ -1,3 +1,6 @@
+# Fork Notes
+This is a fork of [Liam Cottle's RNode Web Flasher](https://github.com/liamcottle/rnode-flasher) that compiles to a monolithic HTML file. The file does not require any external sources or network connection, and can run stand-alone in browsers supporting WebUSB and WebSerial.
+
 # RNode Flasher
 
 A _work-in-progress_ web based firmware flasher for [Reticulum](https://github.com/markqvist/Reticulum) / [RNode_Firmware](https://github.com/markqvist/RNode_Firmware).

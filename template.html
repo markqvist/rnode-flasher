@@ -8,18 +8,13 @@
 
     <title>RNode Flasher</title>
 
-    <script src="./js/rnode.js"></script>
-    <script src="./js/nrf52_dfu_flasher.js"></script>
-    <script src="./js/zip.min.js"></script>
-
-    <!-- tailwind css -->
-    <script src="./js/tailwindcss/tailwind-v3.4.3-forms-v0.5.7.js"></script>
-
-    <!-- vue js -->
-    <script src="./js/vue@3.4.26/dist/vue.global.js"></script>
-
-    <script src="./js/crypto-js@3.9.1-1/core.js"></script>
-    <script src="./js/crypto-js@3.9.1-1/md5.js"></script>
+    <script>{TARGET_RNODE_JS}</script>
+    <script>{TARGET_DFU_FLASHER_JS}</script>
+    <script>{TARGET_ZIP_JS}</script>
+    <script>{TARGET_TAILWIND_JS}</script>
+    <script>{TARGET_CRYPTO_CORE_JS}</script>
+    <script>{TARGET_CRYPTO_MD5_JS}</script>
+    <script src="data:text/javascript;base64,{TARGET_VUE_JS}"></script>
 
 </head>
 <body class="bg-slate-300">
@@ -355,18 +350,12 @@
     </div>
 
 </div>
-
-<!-- setup web-serial-polyfill -->
-<script type="module">
-    import { serial } from "./js/web-serial-polyfill@1.0.15/dist/serial.js";
-    if(!navigator.serial && navigator.usb){
-        navigator.serial = serial;
-    }
+    
 </script>
 
 <!-- setup esptool-js -->
-<script type="module">
-    import { ESPLoader, Transport } from "./js/esptool-js@0.4.5/bundle.js";
+<script>
+    {TARGET_ESPTOOL_BUNDLE_JS}
     window.ESPLoader = ESPLoader;
     window.Transport = Transport;
 </script>
