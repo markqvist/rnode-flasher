@@ -1,5 +1,7 @@
 import base64
-B64_TARGETS = ["TARGET_VUE_JS"]
+B64_TARGETS = ["TARGET_VUE_JS",
+               "RNS_LOGO_PNG"
+              ]
 
 TARGETS = {"TARGET_RNODE_JS":          "./js/rnode.js",
            "TARGET_DFU_FLASHER_JS":    "./js/nrf52_dfu_flasher.js",
@@ -10,6 +12,7 @@ TARGETS = {"TARGET_RNODE_JS":          "./js/rnode.js",
            "TARGET_CRYPTO_MD5_JS":     "./js/crypto-js@3.9.1-1/md5.js",
            "TARGET_ESPTOOL_BUNDLE_JS": "./js/esptool-js@0.4.5/bundle.js",
            "TARGET_SERIAL_JS":         "./js/web-serial-polyfill@1.0.15/dist/serial.js",
+           "RNS_LOGO_PNG":             "reticulum_logo_512.png",
            }
 
 def compile_html():

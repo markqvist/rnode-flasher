@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <title>RNode Flasher</title>
-
     <script>{TARGET_RNODE_JS}</script>
     <script>{TARGET_DFU_FLASHER_JS}</script>
     <script>{TARGET_ZIP_JS}</script>
@@ -15,7 +12,6 @@
     <script>{TARGET_CRYPTO_CORE_JS}</script>
     <script>{TARGET_CRYPTO_MD5_JS}</script>
     <script src="data:text/javascript;base64,{TARGET_VUE_JS}"></script>
-
 </head>
 <body class="bg-slate-300">
 
@@ -24,7 +20,7 @@
     <!-- header -->
     <div class="flex border bg-gray-50 p-3 rounded shadow">
         <div class="mr-3">
-            <img src="reticulum_logo_512.png" class="w-14 h-14"/>
+            <img src="data:image/png;base64,{RNS_LOGO_PNG}" class="w-14 h-14"/>
         </div>
         <div class="my-auto">
             <div class="font-bold">RNode Flasher</div>
@@ -111,8 +107,6 @@
                 <a target="_blank" href="https://github.com/markqvist/RNode_Firmware/releases" class="text-blue-500 hover:underline">Official Firmware</a>
                 <span>•</span>
                 <a target="_blank" href="https://github.com/liberatedsystems/RNode_Firmware_CE/releases" class="text-blue-500 hover:underline">CE Firmware</a>
-                <span>•</span>
-                <a target="_blank" href="https://github.com/attermann/microReticulum_Firmware/releases" class="text-blue-500 hover:underline">Transport Node Firmware</a>
             </div>
         </div>
 
